@@ -16,6 +16,8 @@ from user_package.wrapper_functions import *
 load_dotenv()
 TOKEN = os.getenv("BOT_TOKEN")
 
+print(f"API Key: {TOKEN}")
+
 # Enable logging
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
