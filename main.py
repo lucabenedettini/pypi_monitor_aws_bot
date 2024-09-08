@@ -1,4 +1,5 @@
 import logging
+from dotenv import load_dotenv
 import os
 
 import requests
@@ -12,6 +13,7 @@ from telegram.helpers import escape_markdown
 from database import Database
 from user_package.wrapper_functions import *
 
+load_dotenv()
 TOKEN = os.getenv("BOT_TOKEN")
 
 # Enable logging
